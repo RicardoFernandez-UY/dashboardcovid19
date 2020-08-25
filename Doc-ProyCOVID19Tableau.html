@@ -68,10 +68,10 @@
 										<h2>Origen y propósito</h2>
 									</header>
 									<p>El Tablero (dashboard) surge principalmente para responder a las siguientes preguntas/necesidades:
-										<li>Poder visualizar en forma simultánea la evolución global de la enfermedad en una línea de tiempo, el desplazamiento de la misma en mundo, y  la distribución relativa en los distintos países.</li>
-										<li>Analizar si factores macro de cada país pueden explicar el grado de avance de la enfermedad. (actualmente en desarrollo)</li>
+										<li>Poder visualizar en forma simultánea la evolución global de la pandemia en una línea de tiempo, el desplazamiento de la misma en mundo, y  la distribución relativa en los distintos países.</li>
+										<li>Analizar si factores macro de cada país pueden explicar el grado de avance de la enfermedad.</li>
 										<li>Visualizar la evolución regional de la enfermedad y poder compararla en la línea de tiempo con la evolución a nivel continental.</li>
-										<li>Tener un ranking que permita visualizar rápidamente  los países más afectados (en términos de cantidad) en casos y decesos.</li>
+										<li>Tener un ranking que permita visualizar rápidamente los países más afectados (en términos de cantidad) en casos y decesos.</li>
 									</p>
 									<header class="major">
 										<h2>Organización </h2>
@@ -150,8 +150,8 @@
 										Esto requirió la implementación de scripts para la carga de esta información en las planillas, y posteriormente la definición de una programación regular (scheduling) de la carga, para asegurar una actualización consistente de los datos.
 										<li>	También se definieron algunos cálculos de agregación intermedios para simplificar el trabajo de la herramienta de visualización.</li>
 										<li>	Además de la información proveniente del conjunto de datos original, el tablero realiza cálculos relevantes a los efectos de proveer perspectiva a los datos crudos, mostrando por ejemplo la incidencia porcentual relativa de la enfermedad, en contraste con la población y la cantidad de casos reportados. Esta información permite evaluar desde una perspectiva diferente el impacto real de la pandemia en cada país.</li>
-										<li>	El tablero permite analizar la aparición de casos en cada país en la línea de tiempo, para poder correlacionarlos con otros eventos ocurridos en fechas similares. (en desarrollo)</li>
-										<li>	El tablero cuenta con instrucciones de uso incorporadas, y funciona de forma autónoma, pudiendo ser accedido directamente desde el navegador a través de un link, o invocado desde otro portal (que es la forma en que se utiliza actualmente en la empresa)</li>
+										<li>	El tablero permite analizar la aparición de casos en cada país en la línea de tiempo, para poder correlacionarlos con otros eventos ocurridos en fechas similares.</li>
+										<li>	El tablero cuenta con instrucciones de uso incorporadas, y funciona de forma autónoma, pudiendo ser accedido directamente desde el navegador a través de un link, o invocado desde otro portal</li>
 										<li>	En una siguiente revisión se incorporaron datos de movilidad obtenidos de la información recolectada por Apple y Google (actualmente no disponible por temas de volumen).</li>
 											<li>	Para esto se incorporaron nuevos datasets y se realizaron los cambios correspondientes en las hojas y Dashboard en la herramienta.</li>
 											<li>	En relación a la recuperación de los datos hubo que resolver varios problemas, como por ejemplo la url dinámica generada por Apple para pubicar sus datos. En principio solo se detectó un cambio relacionado con la fecha de publicación por lo cual se programó el script para que formara una url compuesta por las partes fijas variabes. Pero luego se detectó que además de la fecha, había otros cambios más sutiles en la url, que reflejaban versionados internos de Apple. Para solucionar este evento se decidió realizar un web scraping mínimo para recuperar la url ya generada en lugar de calcularla, ya que se desconocían los parámetros en base a los cuales se estaba generando la parte de versionado de la url.</li>
@@ -218,7 +218,7 @@
 						</div>
 					</section-->
 
-				<!-- Footer -->
+				<!-- Footer 
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
@@ -232,7 +232,7 @@
 								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
-					</footer>
+					</footer> -->
 
 			</div>
 
